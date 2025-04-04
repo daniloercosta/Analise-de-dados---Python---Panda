@@ -78,16 +78,3 @@ O erro quadrático médio (RMSE) é calculado para avaliar a performance da pred
 Se quiser trocar ideia sobre o projeto ou tiver alguma dúvida, entre em contato:
 
 GitHub: daniloercosta
-
-perl
-Copiar
-Editar
-
-Se quiser que eu gere essa imagem com o texto do README também, é só falar. Quer colocar esse projeto no seu portfólio Angular também?
-
-
-
-
-
-
-
