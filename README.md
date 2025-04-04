@@ -1,10 +1,93 @@
+![Imagem do Projeto](projeto.png)
 
-# Case: BTC PRICE PREDICTION
-This data analysis case was developed as result of the class *ETL Fundamentals with Python*  from the bootcamp [CARREFOUR BANK DATA ENGINEER](https://web.digitalinnovation.one/track/banco-carrefour-data-engineer) from [Digital Innovation One](https://digitalinnovation.one).
+# 🧠 Previsão de Preços do Bitcoin com LSTM
 
-# Description
-In this project, BTC Price data from Quandl was queried to test its predictions for the dataset and for future data using LSTM Neural Network algorithm.
+![Preview do Projeto](https://raw.githubusercontent.com/daniloercosta/Analise-de-dados---Python---Panda/53dfd6dd996da04c192a382781664ddcfeb01c4c/30dayPredict.png.png)
 
-In order to run this Python code in your computer, install any version of Python 3 and pip install requirements.txt in your environment.
+Este projeto utiliza redes neurais recorrentes (LSTM) para prever os preços do Bitcoin com base em dados históricos. O objetivo é treinar um modelo capaz de prever os preços para os próximos 30 dias.
 
-As this regression problem is non-convex, results vary according to the running environment. In this repository we present a example of graph obtained in one of these regressions (see priceHistory.png and 30dayPredict.png)
+---
+
+## 📈 Resultados
+
+![Histórico de Preço](https://raw.githubusercontent.com/daniloercosta/Analise-de-dados---Python---Panda/53dfd6dd996da04c192a382781664ddcfeb01c4c/priceHistory.png)
+
+---
+
+## 🛠 Tecnologias utilizadas
+
+- Python
+- Pandas
+- Pandas DataReader
+- Scikit-learn
+- Keras
+- Matplotlib
+- Quandl API
+
+---
+
+## 📂 Estrutura do Projeto
+
+- `btcPriceNeuralNetwork.py`: Script principal com toda a lógica de importação, preparação dos dados, treinamento do modelo, previsão e visualização.
+- `requirements.txt`: Dependências do projeto.
+- `30dayPredict.png.png`: Imagem com a previsão para os próximos 30 dias.
+- `priceHistory.png`: Histórico dos preços utilizados para treinamento/validação.
+
+---
+
+## ⚙️ Como executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/daniloercosta/Analise-de-dados---Python---Panda.git
+   cd Analise-de-dados---Python---Panda
+Instale as dependências:
+
+bash
+Copiar
+Editar
+pip install -r requirements.txt
+Configure sua chave de API do Quandl substituindo a linha:
+
+python
+Copiar
+Editar
+api_key='%%YOUR API KEY HERE%%'
+por:
+
+python
+Copiar
+Editar
+api_key='SUA_CHAVE_AQUI'
+Execute o script:
+
+bash
+Copiar
+Editar
+python btcPriceNeuralNetwork.py
+🔍 Detalhes Técnicos
+A rede LSTM utiliza janelas deslizantes de 60 dias para prever o próximo valor.
+
+O modelo é treinado com 60% dos dados, e os 40% restantes são usados para teste.
+
+Após a previsão dos dados conhecidos, o modelo realiza inferência para os próximos 30 dias.
+
+O erro quadrático médio (RMSE) é calculado para avaliar a performance da predição.
+
+📬 Contato
+Se quiser trocar ideia sobre o projeto ou tiver alguma dúvida, entre em contato:
+
+GitHub: daniloercosta
+
+perl
+Copiar
+Editar
+
+Se quiser que eu gere essa imagem com o texto do README também, é só falar. Quer colocar esse projeto no seu portfólio Angular também?
+
+
+
+
+
+
+
